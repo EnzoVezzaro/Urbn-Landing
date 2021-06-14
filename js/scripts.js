@@ -68,9 +68,9 @@
             delay: 3000,
             disableOnInteraction: false
 		},
-        loop: true,
+        loop: false,
         spaceBetween: 50,
-        slidesPerView: 5,
+        slidesPerView: 3,
 		breakpoints: {
             // when window is <= 575px
             575: {
@@ -89,7 +89,7 @@
             },
             // when window is <= 1199px
             1199: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 20
             },
 

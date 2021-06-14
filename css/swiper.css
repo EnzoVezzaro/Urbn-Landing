@@ -74,6 +74,9 @@
   transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
+.swiper-slide img{
+  max-width: 200px;
+}
 .swiper-slide-invisible-blank {
   visibility: hidden;
 }
