@@ -39,6 +39,10 @@ html {
 	height: 100%;
 }
 
+img{
+	width: 100%;
+}
+
 body, p {
 	color: #515867; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
@@ -613,6 +617,11 @@ input[type='checkbox'] {
 	text-align: center;
 }
 
+.header img {
+	max-height: 520px;
+	width: auto;
+}
+
 .header .text-container {
 	margin-bottom: 4rem;
 }
@@ -691,18 +700,11 @@ input[type='checkbox'] {
 	background-repeat: no-repeat;
 }
 
-@media (max-width: 425px) {
-	.cards-1 {
-		padding-bottom: 180px;
-	}
-
-}
-
-@media (max-width: 1024px) {
-	.cards-1 {
-		padding-bottom: 420px;
-	}
-
+.disclaimer-feature{
+	text-align: center;
+	width: 100%;
+	color: #ababab;
+	font-size: 13px;
 }
 
 .cards-1 .h2-heading {
@@ -721,6 +723,8 @@ input[type='checkbox'] {
 .cards-1 .card {
 	margin-bottom: 3rem;
 	background-color: transparent;
+	flex: 1;
+	border: 0;
 }
 
 .cards-1 .card-icon-wrapper {
@@ -786,15 +790,19 @@ input[type='checkbox'] {
 	margin-bottom: 9.5rem;
 }
 
-.basic-1 .image-container img, .basic-3 .image-container img, .basic-2 .image-container img{
+.basic-1 .image-container img, 
+.basic-3 .image-container img, 
+.basic-2 .image-container img, 
+.basic-4 .image-container img{
 	max-height: 430px;
+	width: auto;
 }
 
-.basic-2 .text-container p {
-	margin-bottom: 1.75rem;
-}
-
-.basic-1 .image-container, .basic-2 .image-container, .basic-3 .image-container{
+.header .image-container, 
+.basic-1 .image-container, 
+.basic-2 .image-container, 
+.basic-3 .image-container,
+.basic-4 .image-container{
 	text-align: center;
 	margin-top: 0.75rem;
 }
@@ -949,10 +957,6 @@ input[type='checkbox'] {
 	margin-bottom: 1.5rem;
 }
 
-.basic-4 .image-container {
-	margin-bottom: 3.5rem;
-}
-
 .basic-4 p {
 	margin-bottom: 1.75rem;
 }
@@ -1045,6 +1049,7 @@ input[type='checkbox'] {
 	padding-top: 9.5rem;
 	padding-bottom: 8.5rem;
 	text-align: center;
+	position: relative;
 }
 
 .form-1 .h2-heading {
@@ -1091,6 +1096,18 @@ input[type='checkbox'] {
 
 .footer .footer-col {
 	margin-bottom: 3rem;
+}
+
+.footer .footer-col.first img.footer-logo{
+	max-width: 150px;
+	margin-bottom: 25px;
+}
+
+.download-app-img{
+	max-width: 400px;
+	position: absolute;
+	top: -100px;
+	right: 5%;
 }
 
 .footer h6 {
@@ -1396,7 +1413,7 @@ a:hover.back-to-top {
 	}
 
 	.basic-2 .text-container {
-		margin-top: 3.75rem;
+		
 	}
 
 	.basic-2 h2 {
@@ -1415,25 +1432,6 @@ a:hover.back-to-top {
 		text-align: left;
 	}
 	/* end of details lightbox */
-
-
-	/* Details 2 */
-	.basic-3 .text-container {
-		margin-bottom: 0;
-	}
-	/* end of details 2 */
-
-
-	/* Details 3 */
-	.basic-4 .image-container {
-		margin-bottom: 0;
-	}
-
-	.basic-4 .text-container {
-		margin-top: 3.5rem;
-	}
-	/* end of details 3 */
-
 
 	/* Testimonials */
 	.slider-2 .swiper-container {
@@ -1545,8 +1543,7 @@ a:hover.back-to-top {
 
 	.header img {
 		max-height: 520px;
-		position: absolute;
-		left: 5rem;
+		width: auto;
 	}
 	/* end of header */
 
@@ -1563,9 +1560,11 @@ a:hover.back-to-top {
 		width: 320px;
 	}
 	
-	.cards-1 .card:nth-of-type(3n+2) {
-		margin-right: 4.375rem;
-		margin-left: 4.375rem;
+	.cards-1 .card{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 20px;
+		border: 0;
 	}
 	/* end of features */
 
@@ -1575,29 +1574,10 @@ a:hover.back-to-top {
 		margin-right: 10rem;
 	}
 
-	.basic-2 .text-container {
-		margin-top: 6.5rem;
-	}
-	/* end of details 1 */
-
-
 	/* Details Lightbox */
 	.lightbox-basic .image-container {
 		margin-right: 1.5rem;
 	}
-	/* end of details lightbox */
-
-	.basic-3 .text-container {
-		margin-top: 4rem;
-	}
-	/* end of details 2 */
-
-
-	/* Details 3 */
-	.basic-4 .text-container {
-		margin-top: 6rem;
-	}
-	/* end of details 3 */
 
 
 	/* Testimonials */
@@ -1639,3 +1619,63 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+@media (max-width: 1024px) {
+	.cards-1 {
+		padding-bottom: 420px;
+	}
+
+	.header img {
+		max-height: 220px;
+		width: auto;
+	}
+
+	.basic-1,
+	.basic-3,
+	.basic-4{
+		padding-top: 0;
+	}
+
+	.basic-1 {
+    text-align: center;
+		padding-top: 0;
+	}
+	
+	.basic-1 img {
+    max-width: 350px;
+	}
+
+	.basic-3 .metadata {
+		flex-direction: column-reverse;
+	}
+
+	.basic-3 .metadata .image-container{
+		margin-bottom: 0.75rem;
+		margin-top: 0;
+	}
+
+	.download-app-img {
+    top: -150px;
+	}
+
+}
+
+@media (max-width: 425px) {
+	.cards-1 {
+    padding-bottom: 180px;
+	}
+
+	.cards-1 .card {
+    flex: auto;
+    width: 100%;
+	}
+
+	.basic-1, .basic-3, .basic-4 {
+    padding-top: 0;
+	}
+
+	.download-app-img {
+    top: -230px;
+	}
+
+}
