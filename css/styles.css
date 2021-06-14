@@ -1618,7 +1618,18 @@ a:hover.back-to-top {
 	}
 	/* end of extra pages */
 }
-/* end of min-width 1200px */
+
+@media (min-width: 1400px) {
+	.download-app-img {
+		right: 15%;
+	}
+}
+
+@media (min-width: 1800px) {
+	.download-app-img {
+		right: 25%;
+	}
+}
 
 @media (max-width: 1024px) {
 	.cards-1 {
