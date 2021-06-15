@@ -108,19 +108,19 @@
                         <!-- Sign Up Form -->
                         <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="signUpForm">
                             <div class="form-group">
-                                <input type="email" class="form-control-input" id="email" required>
+                                <input type="email" class="form-control-input" id="email" name="email" required>
                                 <label class="label-control" for="email">Email</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="name" required>
+                                <input type="text" class="form-control-input" id="name" name="name" required>
                                 <label class="label-control" for="name">Name</label>
                             </div>
                             <div class="form-group">
-                                <input type="textarea" class="form-control-input" id="message" required>
+                                <input type="textarea" class="form-control-input" id="message" name="message" required>
                                 <label class="label-control" for="message">Message</label>
                             </div>
                             <div class="form-group checkbox">
-                                <input type="checkbox" id="terms" value="Agreed-to-Terms" required>I agree with the site's stated <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a>
+                                <input type="checkbox" id="terms" value="Agreed-to-Terms" name="terms" required>I agree with the site's stated <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="form-control-submit-button">Send</button>
@@ -142,17 +142,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="h2-heading">Keep in Touch</h2>
-                    <p class="p-heading">Be part of the story, follow us on Instagram via <a href="#your-link">@toytokissimo</a> and subscribe to the newsletter for news and updates about our product</p>
+                    <p class="p-heading">Be part of the story, follow us on Instagram via <a href="#your-link">@toytokissimo</a><br>subscribe to the newsletter for news and updates about our product</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             
             <img class="download-app-img" src="./images/app.png" alt="">
 
             <!-- Newsletter Form -->
-            <form>
+            <form name="subscribe method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <p class="hidden">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                </p>
                 <div class="form-group mail">
-                    <input type="email" class="form-control-input" id="nemail" required>
-                    <label class="label-control" for="nemail">Email address</label>
+                    <input type="email" class="form-control-input" id="email" name="email" required>
+                    <label class="label-control" for="email">Email address</label>
                     <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
@@ -162,6 +165,7 @@
                     <div id="nmsgSubmit" class="h3 text-center hidden"></div>
                 </div>
             </form>
+
             <!-- end of newsletter form -->
 
         </div> <!-- end of container -->
