@@ -99,6 +99,10 @@ ul{
     opacity: 0.8;
 }
 
+.spacer{
+	height: 90px;
+}
+
 .hidden{
 	display: none;
 }
