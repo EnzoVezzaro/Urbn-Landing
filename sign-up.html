@@ -18,7 +18,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Signup | Urbn Gallery Art - Urbano como tu!</title>
+    <title>Contact Us | Urbn Gallery Art - Urbano como tu!</title>
     
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <h1 class="text-center">Sign Up</h1>
+                    <h1 class="text-center">Contact Us</h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -103,10 +103,10 @@
             <div class="row">
                 <div class="col-xl-6 offset-xl-3">
                     <div class="text-box mt-5 mb-5">
-                        <p class="mb-4">Fill out the form below to sign up for the service. Already signed up? Then just <a class="blue" href="log-in.html">Log In</a></p>
+                        <p class="mb-4">Fill out the form below to be contacted by our Team. We'll make it as fast as possible.</p>
 
                         <!-- Sign Up Form -->
-                        <form id="signUpForm">
+                        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="signUpForm">
                             <div class="form-group">
                                 <input type="email" class="form-control-input" id="email" required>
                                 <label class="label-control" for="email">Email</label>
@@ -116,14 +116,14 @@
                                 <label class="label-control" for="name">Name</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control-input" id="password" required>
-                                <label class="label-control" for="password">Password</label>
+                                <input type="textarea" class="form-control-input" id="message" required>
+                                <label class="label-control" for="message">Message</label>
                             </div>
                             <div class="form-group checkbox">
                                 <input type="checkbox" id="terms" value="Agreed-to-Terms" required>I agree with the site's stated <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms & Conditions</a>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">Sign Up</button>
+                                <button type="submit" class="form-control-submit-button">Send</button>
                             </div>
                         </form>
                         <!-- end of sign up form -->
