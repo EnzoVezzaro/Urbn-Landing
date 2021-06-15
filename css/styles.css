@@ -820,6 +820,21 @@ input[type='checkbox'] {
 /****************************/
 /*     Details Lightbox     */
 /****************************/
+.example{
+	background: url(../images/digital-art.jpg);
+	height: 420px;
+    width: 95%;
+	margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+
+.lightbox-basic ul {
+	color: #000;
+}
+
 .lightbox-basic {
 	position: relative;
 	max-width: 1150px;
@@ -1113,7 +1128,7 @@ input[type='checkbox'] {
 }
 
 .download-app-img{
-	max-width: 400px;
+	max-width: 300px;
 	position: absolute;
 	top: -100px;
 	right: 5%;
@@ -1675,7 +1690,7 @@ a:hover.back-to-top {
 	}
 
 	.download-app-img {
-    top: -150px;
+    	top: -200px;
 	}
 
 }
@@ -1695,7 +1710,7 @@ a:hover.back-to-top {
 	}
 
 	.download-app-img {
-    top: -230px;
+    	top: -200px;
 	}
 
 }
