@@ -1,0 +1,23 @@
+{
+  "name": "urbn-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx browser-sync start -s -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnzoVezzaro/Urbn-Landing.git"
+  },
+  "author": "Enzo Junior Vezzaro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnzoVezzaro/Urbn-Landing/issues"
+  },
+  "homepage": "https://github.com/EnzoVezzaro/Urbn-Landing#readme",
+  "dependencies": {
+    
+  }
+}
