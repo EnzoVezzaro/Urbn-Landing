@@ -431,7 +431,7 @@
             <img class="download-app-img" src="./images/app.png" alt="">
 
             <!-- Newsletter Form -->
-            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                 <div class="form-group mail">
                     <input type="email" class="form-control-input" id="email" name="email" required>
                     <label class="label-control" for="email">Email address</label>
@@ -443,6 +443,7 @@
                 <div class="form-message">
                     <div id="nmsgSubmit" class="h3 text-center hidden"></div>
                 </div>
+                <div data-netlify-recaptcha="true"></div>
             </form>
 
             <!-- end of newsletter form -->
