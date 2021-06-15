@@ -190,6 +190,7 @@
     const subscribe = (event) => {
         event.preventDefault()
         console.log(event);
+        alert('here')
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
