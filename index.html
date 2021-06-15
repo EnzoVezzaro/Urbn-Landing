@@ -431,7 +431,7 @@
             <img class="download-app-img" src="./images/app.png" alt="">
 
             <!-- Newsletter Form -->
-            <form netlify>
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
                 <div class="form-group mail">
                     <input type="email" class="form-control-input" id="nemail" required>
                     <label class="label-control" for="nemail">Email address</label>
@@ -444,6 +444,7 @@
                     <div id="nmsgSubmit" class="h3 text-center hidden"></div>
                 </div>
             </form>
+
             <!-- end of newsletter form -->
 
         </div> <!-- end of container -->
