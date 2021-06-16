@@ -830,7 +830,7 @@ input[type='checkbox'] {
     width: 95%;
 	margin: auto;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     border-radius: 40px;
 }
