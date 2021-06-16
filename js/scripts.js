@@ -203,9 +203,9 @@
                 if (result.length > 0){
                     let item = result[0];
                     // check if there's a certificate
-                    if (item.certificate_url){
-                        html = `<object data="${item.certificate_url}" type="application/pdf" width="100%" height="500px">
-                        <p>Alternative text - include a link <a href="${item.certificate_url}">to the PDF!</a></p>
+                    if (item.certificate){
+                        html = `<object data="${item.certificate.url}" type="application/pdf" width="100%" height="500px">
+                        <p>Alternative text - include a link <a href="${item.certificate.url}">to the PDF!</a></p>
                       </object>`;
                     } else {
                         html = '<p>Certificate not available, yet. Retry later.</p>';
