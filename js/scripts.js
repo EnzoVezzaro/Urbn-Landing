@@ -202,11 +202,13 @@
                 let html = '';
                 if (result.length > 0){
                     let item = result[0];
+                    console.log(item);
                     // check if there's a certificate
                     if (item.certificate){
-                        html = `<object data="${item.certificate.url}" type="application/pdf" width="100%" height="500px">
-                        <p>Alternative text - include a link <a href="${item.certificate.url}">to the PDF!</a></p>
-                      </object>`;
+                        console.log(item.certificate.url);
+                        html = `
+                        <iframe src="${item.certificate_url}" width="100%" height="500px">
+                        `;
                     } else {
                         html = '<p>Certificate not available, yet. Retry later.</p>';
                     }
