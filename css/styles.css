@@ -140,13 +140,13 @@ ul{
 a {
 	color: #ffffff;
     opacity: 0.8;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:hover {
 	color: #ffffff;
     opacity: 0.8;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .no-line {
