@@ -138,12 +138,14 @@ ul{
 }
 
 a {
-	color: #515867;
+	color: #ffffff;
+    opacity: 0.8;
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #515867;
+	color: #ffffff;
+    opacity: 0.8;
 	text-decoration: underline;
 }
 
