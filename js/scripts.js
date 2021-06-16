@@ -180,4 +180,59 @@
 		$(this).blur();
 	});
 
+
+    var url_string = window.location.href; //window.location.href
+    var url = new URL(url_string);
+    var token = url.searchParams.get("token_id");
+    console.log(token);
+
+    if (token){
+        checkIten(token);
+    }
+
+    /* Verify Item with Token ID */
+    function checkIten(token_id){
+        console.log('getting item with token id: ', token_id);
+        $.ajax({url: `https://urbn-backoffice.herokuapp.com/nf-ts?token_id=${token_id}`,
+            contentType: "application/json",
+            type:'GET',
+            success: function(result) {
+                console.log(result[0])
+
+                let html = '';
+                if (result.length > 0){
+                    let item = result[0];
+                    // check if there's a certificate
+                    if (item.certificate_url){
+                        html = `<object data="${item.certificate_url}" type="application/pdf" width="100%" height="500px">
+                        <p>Alternative text - include a link <a href="${item.certificate_url}">to the PDF!</a></p>
+                      </object>`;
+                    } else {
+                        html = '<p>Certificate not available, yet. Retry later.</p>';
+                    }
+                } else {
+                    html = '<p>Item not Found</p>';
+                }
+                $('#certification').html(html);
+            },
+            fail: function(xhr, status, error) {
+                // error handling
+                console.log(xhr, status, error);
+            }
+
+        });
+    }
+
+    $('button#checkItem').click( function(e) {
+        e.preventDefault();
+
+        let token_id = $('form#verifyForm').find('input[name="token_id"]').val()
+        console.log('token: ', token_id);
+        
+        checkIten(token_id);
+        
+    });
+
+    
+
 })(jQuery);

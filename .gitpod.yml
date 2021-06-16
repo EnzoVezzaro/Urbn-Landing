@@ -1,2 +1,2 @@
 tasks:
-  - init: npx browser-sync start -s -w
+  - command: npx browser-sync start -s -w
